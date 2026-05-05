@@ -1,0 +1,258 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2026-05-04 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "customer",
+  "project",
+  "client_application",
+  "solution_module",
+  "feature_area",
+  "column_break_1",
+  "status",
+  "reviewed_by",
+  "reviewed_on",
+  "section_summary",
+  "requirement_summary",
+  "functional_details",
+  "technical_details",
+  "section_refs",
+  "doctypes_involved",
+  "api_details",
+  "database_changes",
+  "section_deploy",
+  "deployment_notes",
+  "testing_notes",
+  "decisions_taken",
+  "section_links",
+  "related_task",
+  "repository_url",
+  "pull_request_url",
+  "commit_reference"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "client_application",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Client Application",
+   "options": "Client Application"
+  },
+  {
+   "fieldname": "solution_module",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "Module"
+  },
+  {
+   "fieldname": "feature_area",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "Feature Area"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Draft\nUnder Review\nApproved\nImplemented\nDeprecated"
+  },
+  {
+   "fieldname": "reviewed_by",
+   "fieldtype": "Link",
+   "label": "Reviewed By",
+   "options": "User"
+  },
+  {
+   "fieldname": "reviewed_on",
+   "fieldtype": "Datetime",
+   "label": "Reviewed On"
+  },
+  {
+   "fieldname": "section_summary",
+   "fieldtype": "Section Break",
+   "label": "Summary"
+  },
+  {
+   "fieldname": "requirement_summary",
+   "fieldtype": "Small Text",
+   "label": "Requirement Summary"
+  },
+  {
+   "fieldname": "functional_details",
+   "fieldtype": "Text Editor",
+   "label": "Functional Details"
+  },
+  {
+   "fieldname": "technical_details",
+   "fieldtype": "Text Editor",
+   "label": "Technical Details"
+  },
+  {
+   "fieldname": "section_refs",
+   "fieldtype": "Section Break",
+   "label": "References"
+  },
+  {
+   "fieldname": "doctypes_involved",
+   "fieldtype": "Small Text",
+   "label": "DocTypes Involved"
+  },
+  {
+   "fieldname": "api_details",
+   "fieldtype": "Text Editor",
+   "label": "API Details"
+  },
+  {
+   "fieldname": "database_changes",
+   "fieldtype": "Text Editor",
+   "label": "Database Changes"
+  },
+  {
+   "fieldname": "section_deploy",
+   "fieldtype": "Section Break",
+   "label": "Deployment & Testing"
+  },
+  {
+   "fieldname": "deployment_notes",
+   "fieldtype": "Text Editor",
+   "label": "Deployment Notes"
+  },
+  {
+   "fieldname": "testing_notes",
+   "fieldtype": "Text Editor",
+   "label": "Testing Notes"
+  },
+  {
+   "fieldname": "decisions_taken",
+   "fieldtype": "Text Editor",
+   "label": "Decisions Taken"
+  },
+  {
+   "fieldname": "section_links",
+   "fieldtype": "Section Break",
+   "label": "Links"
+  },
+  {
+   "fieldname": "related_task",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Related Task",
+   "options": "Task"
+  },
+  {
+   "fieldname": "repository_url",
+   "fieldtype": "Data",
+   "label": "Repository URL"
+  },
+  {
+   "fieldname": "pull_request_url",
+   "fieldtype": "Data",
+   "label": "Pull Request URL"
+  },
+  {
+   "fieldname": "commit_reference",
+   "fieldtype": "Data",
+   "label": "Commit Reference"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-05-04 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Client Workdesk",
+ "name": "Implementation Note",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Client Work Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Client Work User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Implementation Reviewer",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "search_fields": "title,customer,project,solution_module,feature_area",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title",
+ "track_changes": 1
+}

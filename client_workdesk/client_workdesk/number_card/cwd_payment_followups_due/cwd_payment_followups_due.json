@@ -1,0 +1,18 @@
+{
+ "doctype": "Number Card",
+ "name": "CWD Payment Follow-ups Due",
+ "label": "Payment Follow-ups Due",
+ "type": "Custom",
+ "method": "client_workdesk.workspace_number_cards.cwd_payment_followups_due_count",
+ "document_type": "Sales Invoice",
+ "module": "Client Workdesk",
+ "is_public": 1,
+ "is_standard": 0,
+ "filters_json": "[]",
+ "filters_config": "[]",
+ "dynamic_filters_json": "[]",
+ "function": "Count",
+ "show_percentage_stats": 0,
+ "stats_time_interval": "Daily",
+ "owner": "Administrator"
+}

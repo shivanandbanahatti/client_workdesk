@@ -1,0 +1,298 @@
+{
+ "doctype": "Workspace",
+ "name": "Client Work Desk",
+ "label": "Client Work Desk",
+ "title": "Client Work Desk",
+ "module": "Client Workdesk",
+ "app": "client_workdesk",
+ "type": "Workspace",
+ "icon": "task",
+ "indicator_color": "blue",
+ "sequence_id": 48.0,
+ "public": 1,
+ "is_hidden": 0,
+ "hide_custom": 0,
+ "for_user": "",
+ "parent_page": "",
+ "restrict_to_domain": "",
+ "content": "[{\"id\":\"1a5bd87eec\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Shortcuts</b></span>\",\"col\":12}},{\"id\":\"7bc9d78176\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Task\",\"col\":3}},{\"id\":\"d4b8e27c95\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Follow-up\",\"col\":3}},{\"id\":\"3e0cde0a72\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Implementation Note\",\"col\":3}},{\"id\":\"dcc4f5a534\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Client Application\",\"col\":3}},{\"id\":\"1ab21a1af7\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Deployment Plan\",\"col\":3}},{\"id\":\"c42b4d830b\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Sales Invoice\",\"col\":3}},{\"id\":\"aad4215bd2\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Project\",\"col\":3}},{\"id\":\"11fb4699fe\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Customer\",\"col\":3}},{\"id\":\"5743bae583\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"c7f942ec49\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Views</b></span>\",\"col\":12}},{\"id\":\"9098661332\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Task List\",\"col\":3}},{\"id\":\"d697ff75b0\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Task Kanban\",\"col\":3}},{\"id\":\"9e836ff298\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Task Calendar\",\"col\":3}},{\"id\":\"1f3c35bbe3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Follow-up Calendar\",\"col\":3}},{\"id\":\"60decf9e9d\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Deployment Calendar\",\"col\":3}},{\"id\":\"b1059ebcf3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Invoice Follow-up Calendar\",\"col\":3}},{\"id\":\"93043e6375\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"d48e4bdb6d\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Dashboard</b></span>\",\"col\":12}},{\"id\":\"d1cf7571d7\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"CWD My Tasks Due Today\",\"col\":4}},{\"id\":\"21d7ed1de4\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"CWD My Overdue Tasks\",\"col\":4}},{\"id\":\"0396a6ad2d\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"CWD Follow-ups Due Today\",\"col\":4}},{\"id\":\"09b358cab7\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"CWD Waiting for Client Tasks\",\"col\":4}},{\"id\":\"54cb4eef78\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"CWD Blocked Tasks\",\"col\":4}},{\"id\":\"78af0e2237\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"CWD Ready to Invoice Tasks\",\"col\":4}},{\"id\":\"ff61cc6d58\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"CWD Payment Follow-ups Due\",\"col\":4}},{\"id\":\"3fe8a9858a\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"CWD Deployments Today\",\"col\":4}},{\"id\":\"b4e25ff2b2\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"CWD UAT Pending Tasks\",\"col\":4}},{\"id\":\"af9887afa1\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"CWD Documents Pending\",\"col\":4}},{\"id\":\"8828d6c5a9\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"06aca4ec8a\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Charts</b></span>\",\"col\":12}},{\"id\":\"1f2636be5b\",\"type\":\"chart\",\"data\":{\"chart_name\":\"CWD Open Tasks by Work Status\",\"col\":6}},{\"id\":\"958a3ed89f\",\"type\":\"chart\",\"data\":{\"chart_name\":\"CWD Open Tasks by Client\",\"col\":6}},{\"id\":\"6074035c65\",\"type\":\"chart\",\"data\":{\"chart_name\":\"CWD Tasks by Priority\",\"col\":6}},{\"id\":\"e11605e08f\",\"type\":\"chart\",\"data\":{\"chart_name\":\"CWD Follow-ups by Type\",\"col\":6}},{\"id\":\"812c282d2e\",\"type\":\"chart\",\"data\":{\"chart_name\":\"CWD Billing Status by Project\",\"col\":6}},{\"id\":\"1dcd3fe70a\",\"type\":\"chart\",\"data\":{\"chart_name\":\"CWD Project Health Summary\",\"col\":6}}]",
+ "shortcuts": [
+  {
+   "label": "New Task",
+   "type": "DocType",
+   "link_to": "Task",
+   "doc_view": "New"
+  },
+  {
+   "label": "New Follow-up",
+   "type": "DocType",
+   "link_to": "Follow-up",
+   "doc_view": "New"
+  },
+  {
+   "label": "New Implementation Note",
+   "type": "DocType",
+   "link_to": "Implementation Note",
+   "doc_view": "New"
+  },
+  {
+   "label": "New Client Application",
+   "type": "DocType",
+   "link_to": "Client Application",
+   "doc_view": "New"
+  },
+  {
+   "label": "New Deployment Plan",
+   "type": "DocType",
+   "link_to": "Deployment Plan",
+   "doc_view": "New"
+  },
+  {
+   "label": "New Sales Invoice",
+   "type": "DocType",
+   "link_to": "Sales Invoice",
+   "doc_view": "New"
+  },
+  {
+   "label": "New Project",
+   "type": "DocType",
+   "link_to": "Project",
+   "doc_view": "New"
+  },
+  {
+   "label": "New Customer",
+   "type": "DocType",
+   "link_to": "Customer",
+   "doc_view": "New"
+  },
+  {
+   "label": "Task List",
+   "type": "DocType",
+   "link_to": "Task",
+   "doc_view": "List"
+  },
+  {
+   "label": "Task Kanban",
+   "type": "DocType",
+   "link_to": "Task",
+   "doc_view": "Kanban",
+   "kanban_board": "Task Work Status"
+  },
+  {
+   "label": "Task Calendar",
+   "type": "DocType",
+   "link_to": "Task",
+   "doc_view": "Calendar"
+  },
+  {
+   "label": "Follow-up Calendar",
+   "type": "DocType",
+   "link_to": "Follow-up",
+   "doc_view": "Calendar"
+  },
+  {
+   "label": "Deployment Calendar",
+   "type": "DocType",
+   "link_to": "Deployment Plan",
+   "doc_view": "Calendar"
+  },
+  {
+   "label": "Invoice Follow-up Calendar",
+   "type": "DocType",
+   "link_to": "Sales Invoice",
+   "doc_view": "Calendar"
+  }
+ ],
+ "number_cards": [
+  {
+   "label": "My Tasks Due Today",
+   "number_card_name": "CWD My Tasks Due Today"
+  },
+  {
+   "label": "My Overdue Tasks",
+   "number_card_name": "CWD My Overdue Tasks"
+  },
+  {
+   "label": "Follow-ups Due Today",
+   "number_card_name": "CWD Follow-ups Due Today"
+  },
+  {
+   "label": "Waiting for Client Tasks",
+   "number_card_name": "CWD Waiting for Client Tasks"
+  },
+  {
+   "label": "Blocked Tasks",
+   "number_card_name": "CWD Blocked Tasks"
+  },
+  {
+   "label": "Ready to Invoice Tasks",
+   "number_card_name": "CWD Ready to Invoice Tasks"
+  },
+  {
+   "label": "Payment Follow-ups Due",
+   "number_card_name": "CWD Payment Follow-ups Due"
+  },
+  {
+   "label": "Deployments Today",
+   "number_card_name": "CWD Deployments Today"
+  },
+  {
+   "label": "UAT Pending Tasks",
+   "number_card_name": "CWD UAT Pending Tasks"
+  },
+  {
+   "label": "Documents Pending",
+   "number_card_name": "CWD Documents Pending"
+  }
+ ],
+ "charts": [
+  {
+   "label": "Open Tasks by Work Status",
+   "chart_name": "CWD Open Tasks by Work Status"
+  },
+  {
+   "label": "Open Tasks by Client",
+   "chart_name": "CWD Open Tasks by Client"
+  },
+  {
+   "label": "Tasks by Priority",
+   "chart_name": "CWD Tasks by Priority"
+  },
+  {
+   "label": "Follow-ups by Type",
+   "chart_name": "CWD Follow-ups by Type"
+  },
+  {
+   "label": "Billing Status by Project",
+   "chart_name": "CWD Billing Status by Project"
+  },
+  {
+   "label": "Project Health Summary",
+   "chart_name": "CWD Project Health Summary"
+  }
+ ],
+ "links": [
+  {
+   "label": "Reports",
+   "type": "Card Break",
+   "hidden": 0,
+   "is_query_report": 0,
+   "link_count": 0,
+   "onboard": 0
+  },
+  {
+   "label": "Today's Work",
+   "type": "Link",
+   "link_type": "Report",
+   "link_to": "CWD Report Todays Work",
+   "is_query_report": 1,
+   "hidden": 0,
+   "link_count": 0,
+   "onboard": 0,
+   "dependencies": ""
+  },
+  {
+   "label": "Overdue Tasks",
+   "type": "Link",
+   "link_type": "Report",
+   "link_to": "CWD Report Overdue Tasks",
+   "is_query_report": 1,
+   "hidden": 0,
+   "link_count": 0,
+   "onboard": 0,
+   "dependencies": ""
+  },
+  {
+   "label": "Follow-ups Due Today",
+   "type": "Link",
+   "link_type": "Report",
+   "link_to": "CWD Report Followups Due Today",
+   "is_query_report": 1,
+   "hidden": 0,
+   "link_count": 0,
+   "onboard": 0,
+   "dependencies": ""
+  },
+  {
+   "label": "Waiting for Client",
+   "type": "Link",
+   "link_type": "Report",
+   "link_to": "CWD Report Waiting Client",
+   "is_query_report": 1,
+   "hidden": 0,
+   "link_count": 0,
+   "onboard": 0,
+   "dependencies": ""
+  },
+  {
+   "label": "Client-wise Open Tasks",
+   "type": "Link",
+   "link_type": "Report",
+   "link_to": "CWD Report Clientwise Open Tasks",
+   "is_query_report": 1,
+   "hidden": 0,
+   "link_count": 0,
+   "onboard": 0,
+   "dependencies": ""
+  },
+  {
+   "label": "Project Health Report",
+   "type": "Link",
+   "link_type": "Report",
+   "link_to": "CWD Report Project Health",
+   "is_query_report": 1,
+   "hidden": 0,
+   "link_count": 0,
+   "onboard": 0,
+   "dependencies": ""
+  },
+  {
+   "label": "Billable Work Not Invoiced",
+   "type": "Link",
+   "link_type": "Report",
+   "link_to": "CWD Report Billable Not Invoiced",
+   "is_query_report": 1,
+   "hidden": 0,
+   "link_count": 0,
+   "onboard": 0,
+   "dependencies": ""
+  },
+  {
+   "label": "Invoices Pending Payment",
+   "type": "Link",
+   "link_type": "Report",
+   "link_to": "CWD Report Invoices Pending Payment",
+   "is_query_report": 1,
+   "hidden": 0,
+   "link_count": 0,
+   "onboard": 0,
+   "dependencies": ""
+  },
+  {
+   "label": "Documents Pending",
+   "type": "Link",
+   "link_type": "Report",
+   "link_to": "CWD Report Documents Pending",
+   "is_query_report": 1,
+   "hidden": 0,
+   "link_count": 0,
+   "onboard": 0,
+   "dependencies": ""
+  },
+  {
+   "label": "Deployment Schedule",
+   "type": "Link",
+   "link_type": "Report",
+   "link_to": "CWD Report Deployment Schedule",
+   "is_query_report": 1,
+   "hidden": 0,
+   "link_count": 0,
+   "onboard": 0,
+   "dependencies": ""
+  }
+ ],
+ "quick_lists": [],
+ "custom_blocks": [],
+ "roles": [],
+ "owner": "Administrator"
+}

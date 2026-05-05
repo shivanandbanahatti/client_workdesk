@@ -1,0 +1,227 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "FUP-.YYYY.-.#####",
+ "creation": "2026-05-04 12:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "subject",
+  "customer",
+  "project",
+  "task",
+  "column_break_1",
+  "follow_up_with",
+  "follow_up_type",
+  "due_date",
+  "due_time",
+  "status",
+  "priority",
+  "column_break_2",
+  "last_followed_up_on",
+  "next_follow_up_date",
+  "owner_user",
+  "create_calendar_event",
+  "section_calendar_internal",
+  "calendar_starts_on",
+  "calendar_ends_on",
+  "calendar_event",
+  "section_notes",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Subject",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "task",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Task",
+   "options": "Task"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "follow_up_with",
+   "fieldtype": "Data",
+   "label": "Follow-up With"
+  },
+  {
+   "fieldname": "follow_up_type",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Follow-up Type",
+   "options": "Client Call\nClient Email\nWhatsApp\nInternal\nVendor\nInvoice\nPayment\nDocument\nApproval\nUAT\nDeployment\nOther"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Due Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "due_time",
+   "fieldtype": "Time",
+   "label": "Due Time"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Pending\nDone\nWaiting for Client\nWaiting for Internal Team\nEscalated\nCancelled"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Priority",
+   "options": "Low\nMedium\nHigh\nCritical"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_followed_up_on",
+   "fieldtype": "Datetime",
+   "label": "Last Followed Up On"
+  },
+  {
+   "fieldname": "next_follow_up_date",
+   "fieldtype": "Date",
+   "label": "Next Follow-up Date"
+  },
+  {
+   "fieldname": "owner_user",
+   "fieldtype": "Link",
+   "label": "Owner",
+   "options": "User"
+  },
+  {
+   "default": "0",
+   "fieldname": "create_calendar_event",
+   "fieldtype": "Check",
+   "label": "Create Calendar Event"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_calendar_internal",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Calendar (internal)"
+  },
+  {
+   "fieldname": "calendar_starts_on",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "Calendar Starts On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "calendar_ends_on",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "Calendar Ends On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "calendar_event",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Calendar Event",
+   "options": "Event",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_notes",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-05-04 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Client Workdesk",
+ "name": "Follow-up",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Client Work Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Client Work User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "search_fields": "subject,customer,project,follow_up_with",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "subject",
+ "track_changes": 1
+}

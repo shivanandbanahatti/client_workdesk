@@ -1,0 +1,24 @@
+{
+ "doctype": "Report",
+ "name": "CWD Report Documents Pending",
+ "report_name": "CWD Report Documents Pending",
+ "ref_doctype": "Client Document Checklist",
+ "report_type": "Script Report",
+ "is_standard": "Yes",
+ "module": "Client Workdesk",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Client Work Manager"
+  },
+  {
+   "role": "Client Work User"
+  },
+  {
+   "role": "Billing User"
+  }
+ ],
+ "owner": "Administrator"
+}

@@ -1,0 +1,44 @@
+/* Client Workdesk — Task Kanban (work_status): priority, blocked, overdue */
+
+.cw-kanban-card {
+	border-left: 4px solid var(--gray-300);
+}
+
+.cw-kanban-card.cw-kanban-priority-critical {
+	border-left-color: var(--red-500);
+	background-color: var(--red-50);
+}
+
+.cw-kanban-card.cw-kanban-priority-high {
+	border-left-color: var(--orange-500);
+	background-color: var(--orange-50);
+}
+
+.cw-kanban-card.cw-kanban-priority-medium {
+	border-left-color: var(--yellow-500);
+}
+
+.cw-kanban-card.cw-kanban-priority-low {
+	border-left-color: var(--blue-400);
+}
+
+.cw-kanban-card.cw-kanban-overdue:not(.cw-kanban-priority-critical) {
+	box-shadow: inset 3px 0 0 0 var(--red-400);
+}
+
+.cw-kanban-card.cw-kanban-blocked {
+	outline: 2px dashed var(--orange-500);
+	outline-offset: 1px;
+	background-color: var(--orange-50);
+}
+
+.cw-kanban-card.cw-kanban-blocked::before {
+	content: "Blocked";
+	display: block;
+	font-size: 10px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	color: var(--orange-800);
+	margin: -2px 0 4px 0;
+}

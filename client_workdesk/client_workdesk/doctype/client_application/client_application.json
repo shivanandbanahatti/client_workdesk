@@ -1,0 +1,146 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-05-04 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "application_name",
+  "application_type",
+  "status",
+  "column_break_1",
+  "technology_stack",
+  "repository_url",
+  "production_url",
+  "staging_url",
+  "support_level",
+  "section_notes",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "application_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Application Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "application_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Application Type",
+   "options": "ERPNext\nWeb App\nMobile App\nWebsite\nIntegration\nAPI\nInternal Tool\nOther"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Active\nIn Development\nMaintenance\nOn Hold\nClosed"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "technology_stack",
+   "fieldtype": "Small Text",
+   "label": "Technology Stack"
+  },
+  {
+   "fieldname": "repository_url",
+   "fieldtype": "Data",
+   "label": "Repository URL"
+  },
+  {
+   "fieldname": "production_url",
+   "fieldtype": "Data",
+   "label": "Production URL"
+  },
+  {
+   "fieldname": "staging_url",
+   "fieldtype": "Data",
+   "label": "Staging URL"
+  },
+  {
+   "fieldname": "support_level",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Support Level",
+   "options": "None\nBasic\nStandard\nPremium\nCritical"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_notes",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-05-04 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Client Workdesk",
+ "name": "Client Application",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Client Work Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "role": "Client Work User"
+  }
+ ],
+ "row_format": "Dynamic",
+ "search_fields": "application_name,customer,application_type,status",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "application_name",
+ "track_changes": 1
+}

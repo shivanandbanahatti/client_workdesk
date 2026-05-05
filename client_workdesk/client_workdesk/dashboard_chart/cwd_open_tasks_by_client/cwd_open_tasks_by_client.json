@@ -1,0 +1,17 @@
+{
+ "doctype": "Dashboard Chart",
+ "name": "CWD Open Tasks by Client",
+ "chart_name": "CWD Open Tasks by Client",
+ "chart_type": "Group By",
+ "document_type": "Task",
+ "group_by_based_on": "customer",
+ "group_by_type": "Count",
+ "filters_json": "[[\"Task\",\"status\",\"in\",[\"Open\",\"Working\",\"Overdue\"]],[\"Task\",\"customer\",\"is\",\"set\"]]",
+ "dynamic_filters_json": "[]",
+ "timeseries": 0,
+ "type": "Bar",
+ "module": "Client Workdesk",
+ "is_public": 1,
+ "is_standard": 0,
+ "owner": "Administrator"
+}

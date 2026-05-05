@@ -1,0 +1,18 @@
+{
+ "doctype": "Number Card",
+ "name": "CWD Follow-ups Due Today",
+ "label": "Follow-ups Due Today",
+ "type": "Custom",
+ "method": "client_workdesk.workspace_number_cards.cwd_followups_due_today_count",
+ "document_type": "Follow-up",
+ "module": "Client Workdesk",
+ "is_public": 1,
+ "is_standard": 0,
+ "filters_json": "[]",
+ "filters_config": "[]",
+ "dynamic_filters_json": "[]",
+ "function": "Count",
+ "show_percentage_stats": 0,
+ "stats_time_interval": "Daily",
+ "owner": "Administrator"
+}

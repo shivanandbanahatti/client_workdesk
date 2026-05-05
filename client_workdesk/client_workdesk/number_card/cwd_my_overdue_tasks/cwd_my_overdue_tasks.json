@@ -1,0 +1,18 @@
+{
+ "doctype": "Number Card",
+ "name": "CWD My Overdue Tasks",
+ "label": "My Overdue Tasks",
+ "type": "Custom",
+ "method": "client_workdesk.workspace_number_cards.cwd_my_overdue_tasks",
+ "document_type": "Task",
+ "module": "Client Workdesk",
+ "is_public": 1,
+ "is_standard": 0,
+ "filters_json": "[]",
+ "filters_config": "[]",
+ "dynamic_filters_json": "[]",
+ "function": "Count",
+ "show_percentage_stats": 0,
+ "stats_time_interval": "Daily",
+ "owner": "Administrator"
+}

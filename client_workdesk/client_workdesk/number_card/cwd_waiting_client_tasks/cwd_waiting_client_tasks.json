@@ -1,0 +1,16 @@
+{
+ "doctype": "Number Card",
+ "name": "CWD Waiting for Client Tasks",
+ "label": "Waiting for Client Tasks",
+ "type": "Document Type",
+ "document_type": "Task",
+ "function": "Count",
+ "filters_json": "[[\"Task\",\"work_status\",\"=\",\"Waiting for Client\"],[\"Task\",\"status\",\"in\",[\"Open\",\"Working\",\"Overdue\"]]]",
+ "dynamic_filters_json": "[]",
+ "module": "Client Workdesk",
+ "is_public": 1,
+ "is_standard": 0,
+ "show_percentage_stats": 0,
+ "stats_time_interval": "Daily",
+ "owner": "Administrator"
+}

@@ -1,0 +1,17 @@
+{
+ "doctype": "Dashboard Chart",
+ "name": "CWD Open Tasks by Work Status",
+ "chart_name": "CWD Open Tasks by Work Status",
+ "chart_type": "Group By",
+ "document_type": "Task",
+ "group_by_based_on": "work_status",
+ "group_by_type": "Count",
+ "filters_json": "[[\"Task\",\"status\",\"in\",[\"Open\",\"Working\",\"Overdue\"]]]",
+ "dynamic_filters_json": "[]",
+ "timeseries": 0,
+ "type": "Donut",
+ "module": "Client Workdesk",
+ "is_public": 1,
+ "is_standard": 0,
+ "owner": "Administrator"
+}

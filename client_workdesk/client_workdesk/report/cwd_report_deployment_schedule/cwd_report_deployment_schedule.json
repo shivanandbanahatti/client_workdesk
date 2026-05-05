@@ -1,0 +1,24 @@
+{
+ "doctype": "Report",
+ "name": "CWD Report Deployment Schedule",
+ "report_name": "CWD Report Deployment Schedule",
+ "ref_doctype": "Deployment Plan",
+ "report_type": "Script Report",
+ "is_standard": "Yes",
+ "module": "Client Workdesk",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Client Work Manager"
+  },
+  {
+   "role": "Client Work User"
+  },
+  {
+   "role": "Billing User"
+  }
+ ],
+ "owner": "Administrator"
+}
